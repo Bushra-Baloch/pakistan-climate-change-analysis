@@ -1,0 +1,23 @@
+
+> summary(model)
+
+Call:
+lm(formula = avg_temp_c ~ co2_per_capita, data = climate_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.9562 -0.3379  0.0617  0.2981  0.8516 
+
+Coefficients:
+               Estimate Std. Error t value Pr(>|t|)    
+(Intercept)     19.4454     0.1240 156.810  < 2e-16 ***
+co2_per_capita   1.4400     0.2339   6.157 5.19e-08 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.4133 on 65 degrees of freedom
+Multiple R-squared:  0.3684,	Adjusted R-squared:  0.3586 
+F-statistic: 37.91 on 1 and 65 DF,  p-value: 5.193e-08
+
+
+> sink()
